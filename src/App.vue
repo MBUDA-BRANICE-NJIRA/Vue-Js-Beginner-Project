@@ -1,26 +1,52 @@
+<!-- Templete Section -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NavBar />
+  <div class="header">
+    <h1>{{ heading }}</h1>
+    <p>{{ description }}</p>
+    <button @click="sayhello">{{ buttonText }}</button>
+  </div>
 </template>
 
+<!-- The script section -->
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    NavBar,
+  },
+
+  data() {
+    return {
+      heading: 'Welcome!',
+      description: 'This is a simple Vue.js application.',
+      buttonText: 'Read More'
+
+    };
+  },
+
+  methods: {
+    sayhello() {
+      alert('Read More button clicked!');
+    }
+  },
+
+
+ };
 </script>
 
+
+<!-- Stling Section -->
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header {
+  background-color: lightgray;
+  padding: 20px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+h1 {
+  color: blue;
+  text-align: center;
 }
 </style>
