@@ -32,7 +32,6 @@ export default {
   }
 };
 </script>
-
 <!-- styling section -->
 <style scoped>
 .app-container {
