@@ -9,6 +9,7 @@
     </header>
     <About />
     <Testimonial />
+    <ContactUs />
     <FooTer />
   </div>
 </template>
@@ -18,6 +19,7 @@ import NavBar from './components/NavBar.vue';
 import FooTer from './components/FooTer.vue';
 import About from './components/About.vue';
 import Testimonial from './components/Testimonial.vue';
+import ContactUs from './components/ContactUs.vue';
 
 export default {
   name: 'App',
@@ -25,6 +27,7 @@ export default {
     NavBar,
     About,
     Testimonial,
+    ContactUs,
     FooTer
   },
   data() {
