@@ -3,8 +3,8 @@
     
     <ul class="nav-list">
       <li class="nav-item"><a href="/">Home</a></li>
-      <li class="nav-item"><a href="/about">About</a></li>
-      <li class="nav-item"><a href="/contact">Contact</a></li>
+      <li class="nav-item"><a href="/About.vue">About</a></li>
+      <li class="nav-item"><a href="/ContactUs.vue">Contact</a></li>
       <li class="nav-item"><a href="/services">Services</a></li>
       <li class="nav-item"><a href="/blog">Blog</a></li>
       <li class="nav-item"><a href="/faq">FAQ</a></li>
