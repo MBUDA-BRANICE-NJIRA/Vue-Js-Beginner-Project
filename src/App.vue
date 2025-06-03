@@ -52,6 +52,11 @@ export default {
 </script>
 
 <style scoped>
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .app-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8fafc; /* slate-50 */
