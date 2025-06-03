@@ -13,8 +13,8 @@ export default {
 
 <style scoped>
 .footer {
-  background-color: #1e293b; /* slate-800 */
-  color: #f8fafc; /* slate-50 */
+  background-color: #1e293b;
+  color: #f8fafc; 
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
