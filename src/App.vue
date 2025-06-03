@@ -7,16 +7,19 @@
       <p>{{ description }}</p>
       <button class="cta-button" @click="sayhello">{{ buttonText }}</button>
     </header>
+    <FooTer />
   </div>
 </template>
 <!-- Scripting Section -->
 <script>
 import NavBar from './components/NavBar.vue';
+import FooTer from './components/FooTer.vue';
 
 export default {
   name: 'App',
   components: {
     NavBar,
+    FooTer
   },
   data() {
     return {
