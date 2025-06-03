@@ -7,6 +7,7 @@
       <p>{{ description }}</p>
       <button class="cta-button" @click="sayhello">{{ buttonText }}</button>
     </header>
+    <About />
     <Testimonial />
     <FooTer />
   </div>
@@ -15,12 +16,14 @@
 <script>
 import NavBar from './components/NavBar.vue';
 import FooTer from './components/FooTer.vue';
+import About from './components/About.vue';
 import Testimonial from './components/Testimonial.vue';
 
 export default {
   name: 'App',
   components: {
     NavBar,
+    About,
     Testimonial,
     FooTer
   },

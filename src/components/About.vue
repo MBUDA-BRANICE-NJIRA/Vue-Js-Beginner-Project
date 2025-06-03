@@ -1,19 +1,26 @@
 <template>
-  <section class="about">
-    <div class="content">
-      <h2 class="title">About Us</h2>
-      <p class="description">
-        Welcome to our Vue.js application! We’re a passionate team dedicated to building clean, modern, and user-friendly web experiences.
-        Our goal is to make web apps that are both functional and enjoyable to use.
-      </p>
-      <p class="description">
-        We specialize in frontend development, UI/UX design, and building scalable solutions with Vue, React, and modern web technologies.
-        Whether you're a developer, designer, or business owner — there's something for you here!
-      </p>
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2 class="about-title">About Us</h2>
+        <p class="about-description">
+          Welcome to our Vue.js application! We're a passionate team committed to crafting clean, intuitive, and high-performance web solutions.
+        </p>
+        <p class="about-description">
+          With expertise in frontend frameworks like Vue and React, and a deep love for UI/UX, we build web experiences that are scalable, efficient, and user-centered. Whether you're a developer, business, or creative — you're in the right place.
+        </p>
+      </div>
+      <div class="about-image-wrapper">
+        <img
+          src="https://i.pravatar.cc/100?img=1"
+          alt="Team working on tech"
+          class="about-image"
+        />
+      </div>
     </div>
-    <img src="https://source.unsplash.com/500x300/?technology,team" alt="About illustration" class="about-image" />
   </section>
 </template>
+
 
 <script>
 export default {
@@ -22,53 +29,55 @@ export default {
 </script>
 
 <style scoped>
-.about {
+.about-section {
+  background-color: #f8fafc;
+  padding: 4rem 1.5rem;
+}
+
+.about-container {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
   align-items: center;
-  padding: 3rem 1rem;
-  background-color: #f1f5f9;
-  border-radius: 0.5rem;
-  text-align: center;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
-  .about {
+  .about-container {
     flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
+    align-items: flex-start;
   }
 }
 
-.content {
+.about-text {
   max-width: 600px;
 }
 
-.title {
+.about-title {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  font-weight: 700;
   color: #1e293b;
-  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.description {
-  font-size: 1rem;
+.about-description {
+  font-size: 1.125rem;
   color: #475569;
+  line-height: 1.75;
   margin-bottom: 1rem;
-  line-height: 1.6;
+}
+
+.about-image-wrapper {
+  flex-shrink: 0;
 }
 
 .about-image {
   width: 100%;
   max-width: 500px;
-  border-radius: 0.5rem;
-  margin-top: 2rem;
-}
-
-@media (min-width: 768px) {
-  .about-image {
-    margin-top: 0;
-    margin-left: 2rem;
-  }
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
 }
 </style>
